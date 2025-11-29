@@ -166,12 +166,3 @@ profile_categorical = df_profile.groupby('CLUSTER_LABEL').agg({
     'NAME_EDUCATION_TYPE': get_mode
 })
 print(profile_categorical)
-
-
-
-
-# 2. Asumir que ya tienes una columna TARGET (0: No Mora, 1: Mora)
-# y que tienes una forma de identificar el conjunto de ENTRENAMIENTO.
-# **IMPORTANTE:** Debes usar solo el conjunto de entrenamiento.
-# Si tu dataset ya está solo en entrenamiento, puedes ignorar el filtro.
-# Si no, necesitas el filtro. Por ahora, asumiremos que el df es solo el conjunto de entrenamiento.
